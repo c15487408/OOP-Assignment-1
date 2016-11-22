@@ -6,23 +6,43 @@ void setup()
   background(0);
   frameRate(100);
   
+    smooth();
+  font = createFont("SegoeUI-BoldItalic-48.vlw", 14);
+  textFont(font);
+  
+
 }
-int fcount = frameCount;
+
+
+
+
+final int stateMenu = 0;
+final int stateNews = 1;
+final int stateVitals = 2;
+int state = stateMenu;
+//
+// font
+PFont font;
+
+
+
+
+
+
 
 void draw()
 {
   loadScreen();
-  //drawSquares();
-  println(frameCount);
+  
 }
 void loadScreen()
 {
   if (frameCount<300)
   {
-  background(0);
-    textSize(32);
+
+    textSize(38);
      fill(255);
-    text("LOADING...",320, height *0.5); 
+    text("STARTING SYSTEM...",220, height *0.5); 
    
 
     pushMatrix();
@@ -30,7 +50,13 @@ void loadScreen()
     rotate(frameCount / 20.0);
      
     fill(255, 0, 0);
-    ellipse(120, 100, 60, 60); 
+    ellipse(200, 180, 60, 60); 
     popMatrix();
   } 
+    else
+  {
+    mainPage();
+  }
+}
+void mainPage(){
 }
