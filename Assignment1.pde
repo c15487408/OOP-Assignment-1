@@ -246,6 +246,22 @@ void handlestateAttack() {
      gameOver();  
   }
   
-
   
-} 
+
+ 
+  void mousePressed()
+  {
+    shoot = true;
+  }
+  
+  void astroidAttack()
+  {  
+    strokeWeight(2);
+    stroke(255, 203, 26); 
+    fill (255,0,0); 
+    
+    for (int i=0; i<5; i++)
+    {
+      ellipse(astroid1[i], astroid2[i]++, astroidSize, astroidSize);
+    }
+  }
