@@ -2,7 +2,7 @@
 
 void setup()
 {
-  size(800, 800);
+  size(1200, 800);
   background(0);
   frameRate(100);
   
@@ -45,7 +45,7 @@ void loadScreen()
 
     textSize(38);
      fill(255);
-    text("STARTING SYSTEM...",220, height *0.5); 
+    text("STARTING SYSTEM...",407, height *0.5); 
    
 
     pushMatrix();
@@ -81,12 +81,11 @@ void mainPage(){
     exit();
     break;
   } 
+  
 } 
 
-
 void keyPressed() {
- 
-  
+  // keyboard. Also different depending on the state.
   switch (state) {
   case stateMenu:
     keyPressedForStateMenu();
@@ -100,5 +99,60 @@ void keyPressed() {
       case stateStatus:
     keyPressedForstateAttack();
     break;
+    
+  default:
+    exit();
+    break;
+  } 
+} 
+void keyPressedForStateMenu() {
+  
+  switch(key) {
+  case '1':
+    state = stateNews;
+    break;
+  case '2':
+    state = stateStatus;
+    break;
+      case '3':
+    state = stateAttack;
+    break;
+    
+  case 'x':
+  case 'X':
+    // quit
+    exit();
+    break;
+  default:
+    
+    break;
   }
+} 
+void keyPressedForStateNews() {
+ 
+  switch(key) {
+  default:
+    state = stateMenu;
+    break;
+  } 
+ 
 }
+void keyPressedForstateStatus() {
+  
+  switch(key) {
+  default:
+    state = stateMenu;
+    break;
+  } 
+  
+} 
+
+void keyPressedForstateAttack() {
+
+  switch(key) { //anykey
+  default:
+    state = stateMenu;
+    break;
+  } 
+  
+} 
