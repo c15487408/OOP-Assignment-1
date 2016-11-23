@@ -156,3 +156,20 @@ void keyPressedForstateAttack() {
   } 
   
 } 
+
+
+
+void showMenu() {
+  background(0);
+  fill(90,205,255);
+  textSize(28);
+  text(" Hello sir. Please use numbers to Navigate the menu.", 90, 150, 4);
+  textSize(14);
+  text("Press 1 News ", 150, 200);
+  text("Press 2 Stats ", 150, 220);
+  text("Press 3 See Attack ", 150, 240);
+  
+  
+  text("Press q to quit ", 150, 280);
+  
+} 
