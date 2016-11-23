@@ -265,3 +265,29 @@ void handlestateAttack() {
       ellipse(astroid1[i], astroid2[i]++, astroidSize, astroidSize);
     }
   }
+
+void Gun(int shotX)
+  {
+    boolean strike = false;
+    for (int i = 0; i < 5; i++)
+    {
+      if((shotX >= (astroid1[i]-astroidSize/2)) && (shotX <= (astroid1[i]+astroidSize/2))) {
+        strike = true;
+        line(mouseX, 565, mouseX, astroid2[i]);
+        ellipse(astroid1[i], astroid2[i],
+                astroidSize+25, astroidSize+25);
+        astroid1[i] = getRandomX();
+        astroid2[i] = 0;
+
+
+// update score
+        score++;
+      }    
+    }
+  
+    if(strike == false)
+    {
+      line(mouseX, 565, mouseX, 0);
+    }  
+  
+  }
