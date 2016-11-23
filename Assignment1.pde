@@ -26,7 +26,26 @@ int state = stateMenu;
 PFont font;
 PImage loading;
 
-
+//VARIABLES FOR ASTROID GAME IN ATTACK STATE
+//initialise score variable
+int score;
+int astroidSize = 20;
+  boolean shoot = false;
+  
+  //Initialise youFailed variable
+ int youFailed = 0;
+ 
+ //int startGame;
+  int getRandomX()
+  
+  
+ // int score;
+  {
+    return int(random(600));
+  }
+  
+  int[] astroid1 = { getRandomX(), getRandomX(), getRandomX(), getRandomX(), getRandomX() };
+  int[] astroid2 = { 0, 0, 0, 0, 0 };
 
 
 
@@ -203,16 +222,14 @@ void handleStateNews() {
 void handlestateStatus() {
   background(0);
   fill(90,205,255);
-  textSize(32);
-  text(" Status ", 150, 100, 3);
+
 
   
 } 
 void handlestateAttack() {
   background(0);
   fill(90,205,255);
-  textSize(32);
-  text(" Attack ", 150, 100, 3);
+  
 
   
 } 
