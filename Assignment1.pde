@@ -82,3 +82,15 @@ void mainPage(){
     break;
   } 
 } 
+
+
+void keyPressed() {
+ 
+  
+  switch (state) {
+  case stateMenu:
+    keyPressedForStateMenu();
+    break;
+
+  }
+}
