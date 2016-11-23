@@ -191,10 +191,20 @@ void showMenu() {
 } 
 
 void handleStateNews() {
-  background(255, 204, 0);
-  fill(0);
+  background(0);
+  fill(90,205,255);
   textSize(32);
   text(" News ", 150, 100, 3);
 
  
+} 
+
+
+void handlestateStatus() {
+  background(0);
+  fill(90,205,255);
+  textSize(32);
+  text(" Status ", 150, 100, 3);
+
+  
 } 
