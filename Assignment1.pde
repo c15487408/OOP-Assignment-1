@@ -227,8 +227,24 @@ void handlestateStatus() {
   
 } 
 void handlestateAttack() {
-  background(0);
-  fill(90,205,255);
+ background (0);
+    fill(255);
+    strokeWeight(2);
+    stroke (0,0,160);
+    fill(0, 162, 232);
+    triangle(mouseX-8, 780, mouseX+8, 780, mouseX, 765);
+    // display score
+    fill(255);
+    text(score, 20,20);
+    if(shoot)
+    {
+      Gun(mouseX);
+      shoot = false;
+    }
+  
+     astroidAttack();
+     gameOver();  
+  }
   
 
   
