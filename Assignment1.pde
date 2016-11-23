@@ -208,3 +208,11 @@ void handlestateStatus() {
 
   
 } 
+void handlestateAttack() {
+  background(0);
+  fill(90,205,255);
+  textSize(32);
+  text(" Attack ", 150, 100, 3);
+
+  
+} 
