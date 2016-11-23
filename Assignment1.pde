@@ -173,3 +173,28 @@ void showMenu() {
   text("Press q to quit ", 150, 280);
   
 } 
+
+
+void showMenu() {
+  background(0);
+  fill(90,205,255);
+  textSize(28);
+  text(" Hello sir. Please use numbers to Navigate the menu.", 90, 100, 3);
+  textSize(14);
+  text("Press 1 News ", 100, 200);
+  text("Press 2 Stats ", 100, 220);
+  text("Press 3 See Attack ", 100, 240);
+  
+  
+  text("Press x to quit ", 100, 280);
+  
+} 
+
+void handleStateNews() {
+  background(255, 204, 0);
+  fill(0);
+  textSize(32);
+  text(" News ", 150, 100, 3);
+
+ 
+} 
