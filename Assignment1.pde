@@ -19,7 +19,7 @@ void setup()
 final int stateMenu = 0;
 final int stateNews = 1;
 final int stateStatus = 2;
-
+final int stateAttack = 3;
 int state = stateMenu;
 //
 // font
@@ -70,5 +70,15 @@ void mainPage(){
   case stateNews:
     handleStateNews();
     break;
-  }
-}
+  case stateStatus:
+    handlestateStatus();
+    break;
+      case stateAttack:
+    handlestateAttack();
+    break;
+    
+  default:
+    exit();
+    break;
+  } 
+} 
