@@ -291,3 +291,24 @@ void Gun(int shotX)
     }  
   
   }
+    void gameOver()
+  {
+    for (int i=0; i< 5; i++)
+    {
+      if(astroid2[i]==800)
+      {
+
+    
+        fill(color(255,0,0));
+     fill(255, 0, 0);
+    textAlign(CENTER);
+    text("ASTROID HIT CITY!", width/2, height/2);
+    text("Amount of Astroids hit:   "+ score, width/2, height/2 + 50);
+    text("Get more next time!", width/2, height/2 + 70);
+      
+     noLoop();
+
+  
+       }
+      }
+    }
