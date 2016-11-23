@@ -91,6 +91,9 @@ void keyPressed() {
   case stateMenu:
     keyPressedForStateMenu();
     break;
+  case stateNews:
+    keyPressedForStateNews();
+    break;
 
   }
 }
