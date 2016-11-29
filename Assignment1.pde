@@ -212,11 +212,17 @@ void showMenu() {
     popMatrix();
     
     pushMatrix();
-translate(width/2,height/2);
+translate(width*0.75,height*0.3);
 rotate(frameCount / 32.0);
-triangle(-100, 100, 0, -100, 100, 100); 
+triangle(-200, 200, 0, -200, 200, 200); 
 popMatrix();
-    
+         textSize(18);
+     fill(255);
+    text("ATTACK MODE",820, 265); 
+     textSize(19);
+     fill(255);
+    text("Press 3",840, 280); 
+
   
 
 
@@ -227,10 +233,12 @@ popMatrix();
  
 
 void handleStateNews() {
-  background(0);
+  background(255);
   fill(90,205,255);
   textSize(32);
   text(" News ", 150, 100, 3);
+  
+
 
  
 } 
