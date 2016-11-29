@@ -4,4 +4,5 @@ Press 1 to read the news
 Press 2 to see stats of ship
 Press 3 to play the attack mode game
 Attack mode is played using the mouse
+Objective of game is to shoot astroids before they hit the city
 Youtube demo: https://youtu.be/fVYEblc7m14
