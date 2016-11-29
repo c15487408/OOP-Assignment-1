@@ -196,7 +196,20 @@ void showMenu() {
     ellipse(140, 110, 60, 60); 
     popMatrix();
     
+     textSize(25);
+     fill(255);
+    text("STATUS",180, 600); 
+     textSize(20);
+     fill(255);
+    text("Press 2",180, 630); 
 
+    pushMatrix();
+    translate(width*0.2, height *0.75);
+    rotate(frameCount / 32.0);
+     
+    fill(255, 0, 0);
+    ellipse(140, 110, 60, 60); 
+    popMatrix();
     
   
 
