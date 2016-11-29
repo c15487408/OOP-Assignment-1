@@ -299,18 +299,21 @@ void handlestateStatus() {
   pieChart3(300, angle3);
   pieChart4(300, angle4);
 
-        textSize(19);
-     fill(255);
+    textSize(19);
+    fill(255);
     text("Feul",180, 220); 
     
-           textSize(19);
-     fill(255);
+    textSize(19);
+    fill(255);
     text("Engine",180, 620); 
     
-               textSize(19);
-     fill(255);
+    textSize(19);
+    fill(255);
     text("Ammunition",850, 620); 
     
+    textSize(19);
+    fill(255);
+    text("Ship condition",850, 220); 
 
  
   
