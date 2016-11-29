@@ -44,8 +44,8 @@ int astroidSize = 20;
     return int(random(600));
   }
   
-  int[] astroid1 = { getRandomX(), getRandomX(), getRandomX(), getRandomX(), getRandomX() };
-  int[] astroid2 = { 0, 0, 0, 0, 0 };
+  int[] astroid1 = { getRandomX(), getRandomX(), getRandomX(), getRandomX(), getRandomX(),getRandomX(),getRandomX(),getRandomX(),getRandomX(),getRandomX(),getRandomX() };
+  int[] astroid2 = { 0, 0, 0, 0, 0, 0, 0,0, 0, 0,  };
 
 
 
@@ -77,6 +77,7 @@ void loadScreen()
   } 
     else
   {
+    background(0);
     mainPage();
   }
 }
@@ -179,35 +180,32 @@ void keyPressedForstateAttack() {
 
 
 void showMenu() {
-  background(0);
-  fill(90,205,255);
-  textSize(28);
-  text(" Hello sir. Please use numbers to Navigate the menu.", 90, 150, 4);
-  textSize(14);
-  text("Press 1 News ", 150, 200);
-  text("Press 2 Stats ", 150, 220);
-  text("Press 3 See Attack ", 150, 240);
+
+        textSize(25);
+     fill(255);
+    text("WORLD NEWS",180, 200); 
+     textSize(20);
+     fill(255);
+    text("Press 1",180, 230); 
+
+    pushMatrix();
+    translate(width*0.2, height *0.25);
+    rotate(frameCount / 30.0);
+     
+    fill(255, 0, 0);
+    ellipse(140, 110, 60, 60); 
+    popMatrix();
+    
+
+    
   
-  
-  text("Press q to quit ", 150, 280);
+
+
   
 } 
 
 
-void showMenu() {
-  background(0);
-  fill(90,205,255);
-  textSize(28);
-  text(" Hello sir. Please use numbers to Navigate the menu.", 90, 100, 3);
-  textSize(14);
-  text("Press 1 News ", 100, 200);
-  text("Press 2 Stats ", 100, 220);
-  text("Press 3 See Attack ", 100, 240);
-  
-  
-  text("Press x to quit ", 100, 280);
-  
-} 
+ 
 
 void handleStateNews() {
   background(0);
@@ -306,7 +304,7 @@ void Gun(int shotX)
     text("Amount of Astroids hit:   "+ score, width/2, height/2 + 50);
     text("Get more next time!", width/2, height/2 + 70);
       
-     noLoop();
+     noLoop();  
 
   
        }
