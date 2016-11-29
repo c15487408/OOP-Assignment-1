@@ -299,7 +299,11 @@ void handlestateStatus() {
   pieChart3(300, angle3);
   pieChart4(300, angle4);
 
- 
+        textSize(19);
+     fill(255);
+    text("Feul",180, 220); 
+    
+
  
   
 
