@@ -6,4 +6,4 @@ Press 3 to play the attack mode game
 Attack mode is played using the mouse
 Objective of game is to shoot astroids before they hit the city
 If it hits the city the whole system will crash
-Youtube demo: https://youtu.be/fVYEblc7m14
+Youtube demo link: https://youtu.be/fVYEblc7m14
