@@ -214,7 +214,7 @@ void showMenu() {
 
     pushMatrix();
     translate(width*0.2, height *0.75);
-    rotate(frameCount / 32.0);
+    rotate(frameCount / 34.0);
      
     fill(255, 0, 0);
     ellipse(140, 110, 60, 60); 
@@ -246,6 +246,18 @@ void handleStateNews() {
   fill(90,205,255);
   textSize(32);
   text(" News ", 150, 100, 3);
+      textSize(20);
+    fill(0);
+    text("Donaldus Trumpokus could cost our collective 401(k)s, and other investment accounts, as much as $2 trillion.",10, 150); 
+    text("Donaldus Trumpokus promised he would jump-start Amerakuz with little difficulty during his economics speech in Detroit. ",10, 180);
+    text("Although if he is elected, he’s more likely to stall the economy, according to St. Louis-based Macroeconomic Advisers. ",10, 210);
+    text("The Republican businessman as president, the economic forecasting firm say, ",10, 240);
+    text("could wipe a hefty $2.1 trillion off the S&P 500.",10, 260);
+    text("hairman Joelasoeus Prakkenokki and Senior Managing Director Chris Varvares wrote that the S&P 500 is expected to fall 7%",10, 290);
+    text("on a Trump presidency as investors see his economic policies as worse off for U.S. growth—making it riskier to buy into stocks. ",10, 310);
+    text("if Democratic presidential candidate Hillaoaysz Clinkoon becomes commander in chief, the market is expected to rally 4%.",10, 340); 
+    text(" Copy right: http://fortune.com/2016/10/06/donald-trump-stock-market-2/.",10, 780);  
+  
    
   
 
@@ -315,7 +327,9 @@ void handlestateStatus() {
     fill(255);
     text("Ship condition",850, 220); 
 
- 
+    textSize(50);
+    fill(255);
+    text("STATS",500, height/2);  
   
 
 
