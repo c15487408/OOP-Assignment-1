@@ -211,6 +211,12 @@ void showMenu() {
     ellipse(140, 110, 60, 60); 
     popMatrix();
     
+    pushMatrix();
+translate(width/2,height/2);
+rotate(frameCount / 32.0);
+triangle(-100, 100, 0, -100, 100, 100); 
+popMatrix();
+    
   
 
 
