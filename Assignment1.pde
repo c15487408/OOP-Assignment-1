@@ -48,7 +48,16 @@ int astroidSize = 20;
   int[] astroid2 = { 0, 0, 0, 0, 0, 0, 0,0, 0, 0,  };
 
 
+//Pie chart
+int a1 = int(random(250,295));
+int a2 = int(random(300,350));
+int a3= int(random(290,330));
+int a4= int(random(340,350));
 
+int[] angle1 = { a1};
+int[] angle2 = { a2 };
+int[] angle3 = { a3 };
+int[] angle4 = { a4 };
 
 
 
@@ -237,16 +246,62 @@ void handleStateNews() {
   fill(90,205,255);
   textSize(32);
   text(" News ", 150, 100, 3);
+   
   
 
 
  
 } 
-
-
+void pieChart(float diameter, int[] data) {
+  float lastAngle = 0;
+  for (int i = 0; i < data.length; i++) {
+    float gray = map(i, 0, data.length, 0, 255);
+    fill(gray);
+    arc(200, 200, diameter- 25, diameter-25, lastAngle, lastAngle+radians(angle1[i]));
+    lastAngle += radians(angle1[i]);
+    
+  }
+}
+void pieChart2(float diameter, int[] data) {
+  float lastAngle = 0;
+  for (int i = 0; i < data.length; i++) {
+    float gray = map(i, 0, data.length, 0, 255);
+    fill(gray);
+    arc(200, 600, diameter- 25, diameter-25, lastAngle, lastAngle+radians(angle2[i]));
+    lastAngle += radians(angle2[i]);
+    
+  }
+}
+void pieChart3(float diameter, int[] data) {
+  float lastAngle = 0;
+  for (int i = 0; i < data.length; i++) {
+    float gray = map(i, 0, data.length, 0, 255);
+    fill(gray);
+    arc(900, 600, diameter- 25, diameter-25, lastAngle, lastAngle+radians(angle3[i]));
+    lastAngle += radians(angle3[i]);
+    
+  }
+}
+void pieChart4(float diameter, int[] data) {
+  float lastAngle = 0;
+  for (int i = 0; i < data.length; i++) {
+    float gray = map(i, 0, data.length, 0, 255);
+    fill(gray);
+    arc(900, 200, diameter- 25, diameter-25, lastAngle, lastAngle+radians(angle4[i]));
+    lastAngle += radians(angle4[i]);
+    
+  }
+}
 void handlestateStatus() {
-  background(0);
-  fill(90,205,255);
+  background(255,0, 0);
+  pieChart(300, angle1);
+  pieChart2(300, angle2);
+  pieChart3(300, angle3);
+  pieChart4(300, angle4);
+
+ 
+ 
+  
 
 
   
