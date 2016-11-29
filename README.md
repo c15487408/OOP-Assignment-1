@@ -1,6 +1,7 @@
 # OOP-Assignment-1
 Reyan Jaimon
 C15407408
+DT228/2
 This is our first OOP assignment in which we have to make a user interface for a Sci- Movie
 Press 1 to read the news
 Press 2 to see stats of ship
