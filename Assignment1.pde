@@ -307,7 +307,12 @@ void handlestateStatus() {
      fill(255);
     text("Engine",180, 620); 
     
+               textSize(19);
+     fill(255);
+    text("Ammunition",850, 620); 
+    
 
+ 
   
 
 
